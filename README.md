@@ -4,7 +4,7 @@
 | ---- |:---:| ---:|
 | 4+   | 6+  | 50+ | 
 
-#  Docker Kurulumu
+## Docker Kurulumu
 
 ``` 
 sudo apt-get update
@@ -22,7 +22,7 @@ sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyring
 sudo chmod a+r /etc/apt/keyrings/docker.asc
 ```
 
-#  Docker-Compose Kurulumu
+## Docker-Compose Kurulumu
 ```
 VER=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep tag_name | cut -d '"' -f 4)
 ```
@@ -35,7 +35,7 @@ chmod +x /usr/local/bin/docker-compose
 ```
 docker-compose --version
 ```
-# Docker Kullanıcı İzinleri
+## Docker Kullanıcı İzinleri
 ```
 sudo groupadd docker
 ```
@@ -43,17 +43,14 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 ```
 
-# SixGPT Kurulumu
+## SixGPT Kurulumu
 
-### Create SixGPT folder
 ```
-mkdir
-```
-```
-cd sixgpt
+git clone https://github.com/sixgpt/miner.git
+cd miner
 ```
 
-# Değişkenleri Ayarlıyoruz
+## Değişkenleri Ayarlıyoruz
 .env dosyası da kuruyoruz
 
 ```
@@ -68,7 +65,12 @@ OLLAMA_API_URL=http://ollama:11434/api
 
 CTRL X + CTRL Y + ENTER 
 
-# Artık başlatmaya hazırız
+## Son işlemler
+```
+nano docker-compose.yml
+```
+
+## Artık başlatmaya hazırız
 Önce çalıştır
 ```
 docker-compose up -d
@@ -105,4 +107,9 @@ chmod +x run_sixgpt.sh
 
 ```
 docker compose logs -fn 100
+```
+
+veya 
+```
+docker-compose logs -f
 ```
