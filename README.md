@@ -79,10 +79,6 @@ Sonra durdur
 ```
 docker-compose down
 ```
-Logları kontrol et
-```
-docker-compose logs -f
-```
 Her şey tamamsa artık çalıştırabilirsiniz
 ```
 chmod +x run_sixgpt.sh
@@ -103,13 +99,5 @@ cd miner
 chmod +x run_sixgpt.sh
 ./run_sixgpt.sh
 ```
-### Loglar için
 
-```
-docker compose logs -fn 100
-```
-
-veya 
-```
-docker-compose logs -f
-```
+bu komut sonrası 5'e basarsanız logları görürsünüz, bir kaç error verebilir llama update yaparsınız.
