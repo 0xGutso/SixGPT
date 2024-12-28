@@ -17,6 +17,15 @@ sudo tee /etc/apt/sources.list.d/docker.list > /dev/null && \
 sudo apt-get update && \
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 ```
+
+## Docker-Compose Kurulumu
+```
+VER=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep tag_name | cut -d '"' -f 4)
+curl -L "https://github.com/docker/compose/releases/download/"$VER"/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+```
+
 ## Docker Kullanıcı İzinleri
 ```
 sudo groupadd docker
@@ -48,9 +57,11 @@ OLLAMA_API_URL=http://ollama:11434/api
 CTRL X + CTRL Y + ENTER 
 
 ## Son işlemler
+
 ```
 nano docker-compose.yml
 ```
+
 
 ## Artık başlatmaya hazırız
 Çalıştırma
