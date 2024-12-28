@@ -83,3 +83,5 @@ chmod +x run_sixgpt.sh
 ```
 
 bu komut sonrası 5'e basarsanız logları görürsünüz, bir kaç error verebilir llama update yaparsınız.
+
+Vanascande ve node loglarında ödül görmüyorsanız dosyalardan root/miner/docker-compose.yml içerisinden ``sixgpt/miner:latest`` kısmını ``sixgpt/miner:3.0.0`` olarak değiştirsin VANA kısmında TEE sıkıntısı mevcut, düzeltirlerse güncelleme geçerim
