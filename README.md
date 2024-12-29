@@ -69,15 +69,17 @@ nano docker-compose.yml
 ```
 docker-compose up -d
 ```
-Durdurma
+
+Her şey tamamsa artık çalıştırabilirsiniz
+```
+./run_sixgpt.sh
+```
+
+
+Durdurmak için
 ```
 docker-compose down
 ```
-Her şey tamamsa artık çalıştırabilirsiniz
-```
-chmod +x run_sixgpt.sh
-./run_sixgpt.sh
-``` 
 
 Buradan dil tercihi ve bir kaç güncellemeleri yapabiliyorsunuz. Sayılara basarak seçim yapabilirsiniz.
 
@@ -88,9 +90,6 @@ Cüzdanda en az 0.1den fazla Vana olmadan çalışmayacaktır, siz yine de cüzd
 Ara sıra [vanascan](https://vanascan.io/)'a cüzdan adresinizi girip tx atıp atmadığını kontrol edin, eğer bot çalıştırmayı durdurduysa şu kodları yazarak tekrar çalıştırın
 ```
 cd miner
-```
-```
-chmod +x run_sixgpt.sh
 ./run_sixgpt.sh
 ```
 
