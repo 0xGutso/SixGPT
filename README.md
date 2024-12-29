@@ -62,6 +62,7 @@ CTRL X + CTRL Y + ENTER
 nano docker-compose.yml
 ```
 
+``sixgpt/miner:latest`` kısmını ``sixgpt/miner:3.0.0`` değiştirelim son kısım vana TEE kısmında hatalı şu anlık diğer türlü çalışmıyor
 
 ## Artık başlatmaya hazırız
 Çalıştırma
