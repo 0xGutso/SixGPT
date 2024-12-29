@@ -69,17 +69,23 @@ nano docker-compose.yml
 ```
 docker-compose up -d
 ```
-
-Her şey tamamsa artık çalıştırabilirsiniz
-```
-./run_sixgpt.sh
-```
-
-
 Durdurmak için
 ```
 docker-compose down
 ```
+Loglar için 
+```
+docker compose logs -f
+```
+
+Diğer çok seçenekli yöntem
+```
+chmod +x run_sixgpt.sh
+./run_sixgpt.sh
+```
+
+
+
 
 Buradan dil tercihi ve bir kaç güncellemeleri yapabiliyorsunuz. Sayılara basarak seçim yapabilirsiniz.
 
