@@ -62,7 +62,7 @@ CTRL X + CTRL Y + ENTER
 nano docker-compose.yml
 ```
 
-``sixgpt/miner:latest`` kısmını ``sixgpt/miner:3.0.0`` değiştirelim son kısım vana TEE kısmında hatalı şu anlık diğer türlü çalışmıyor
+``sixgpt/miner:latest`` kısmını ``sixgpt/miner:3.4.0`` değiştirelim son kısım vana TEE kısmında hatalı şu anlık diğer türlü çalışmıyor
 
 ## Artık başlatmaya hazırız
 Çalıştırma
@@ -101,4 +101,4 @@ cd miner
 
 bu komut sonrası 5'e basarsanız logları görürsünüz, bir kaç error verebilir llama update yaparsınız.
 
-Vanascande ve node loglarında ödül görmüyorsanız dosyalardan root/miner/docker-compose.yml içerisinden ``sixgpt/miner:latest`` kısmını ``sixgpt/miner:3.0.0`` olarak değiştirsin VANA kısmında TEE sıkıntısı mevcut, düzeltirlerse güncelleme geçerim
+Vanascande ve node loglarında ödül görmüyorsanız dosyalardan root/miner/docker-compose.yml içerisinden değişiklik yapmanız gerekiyor. Discordlarını kontrol edebilirsiniz veya ara sıra buradan güncelleme geçerim.
